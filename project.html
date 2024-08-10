@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-Based Music Player</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <div class="music-player">
+        <div class="now-playing">
+            <img src="Album Art.jpeg" alt="Album Art">
+            <h3>Song Title</h3>
+            <p>Artist Name</p>
+        </div>
+
+        <div class="controls">
+            <button id="prevBtn">⏮️</button>
+            <button id="playPauseBtn">⏯️</button>
+            <button id="nextBtn">⏭️</button>
+        </div>
+
+        <div class="volume-control">
+            <label for="volume">Volume</label>
+            <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5">
+        </div>
+
+        <div class="playlist">
+            <h4>Playlist</h4>
+            <ul id="playlist">
+                <li>Song 1 <span>▶️</span></li>
+                <li>Song 2 <span>▶️</span></li>
+                <li>Song 3 <span>▶️</span></li>
+            </ul>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search for songs...">
+        </div>
+    </div>
+
+    <audio id="audioPlayer" src="song1.mp3"></audio>
+
+    <script src="project.js"></script>
+</body>
+</html>
